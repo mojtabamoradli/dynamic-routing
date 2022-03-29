@@ -5,7 +5,7 @@ In dynamic routing, routes are initialized dynamically when the page gets render
 
 With knowing all of this, you may want to use this feature but not use these frameworks for any reason you may have. Here is how I did it using Jquery, PHP, and plain JS.
 
-![alt-text](https://github.com/mojtabamoradli/dynamic-routing/blob/main/Dynamic-Routing.gif?raw=true)
+![alt-text](https://github.com/mojtabamoradli/dynamic-routing/blob/main/dynamicRouting.gif?raw=true)
 
 
 ```diff
