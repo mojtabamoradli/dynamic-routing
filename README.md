@@ -7,9 +7,15 @@ With knowing all of this, you may want to use this feature but not use these fra
 
 
 ```diff
-- make sure to include .htaccess file.
+- make sure to include ".htaccess" file with this content:
 
++ php_flag output_buffering on
++ RewriteEngine On
++ RewriteCond %{REQUEST_FILENAME} !-f
++ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 ```
+
+
 
 
 Enjoy... 🚀
