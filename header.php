@@ -35,10 +35,14 @@
 
 		$(document).on('click', '.nav', function(event) {
 			event.preventDefault();
-            
+
+			$(document).attr("title", 'Home');
+
 			var route = $(this).attr('route');
 
 			$.getJSON(page_url+'routes.php', {route: route}, function(data, textStatus, xhr) {
+
+				$(document).attr("title", data.title);
 
 				$(document).find('.page_content').html(data.data);
 
